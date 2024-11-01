@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherweb</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>What is Global Warming?</h1>
+    <p>Global warming is the gradual increase in the overall temperature of the Earth's atmosphere, primarily caused by human activities that release greenhouse gases, such as carbon dioxide and methane, into the atmosphere. These gases trap heat from the sun, leading to a rise in global temperatures. Imagine the Earth as a car with the windows rolled up on a sunny day - the heat gets trapped inside, making it warmer. Similarly, the greenhouse gases in the atmosphere trap heat, causing the Earth's temperature to rise. This can lead to melting of polar ice caps, sea-level rise, and extreme weather events like hurricanes and droughts.</p>
+    <img src="https://media.istockphoto.com/id/1339138376/photo/climate-change-from-drought-to-green-growth.jpg?s=612x612&w=0&k=20&c=05aOfOV32_8Ow5cgcRFV6vcKdmxvD2LHqWxiiZXi2pU=" alt="global warming picture" width="1000">
+    <br><br>
+
+    <section class="section1">
+        <h2>Climate change statistics by continent</h2>
+        <form action= " " method="post">
+            <label for="continent">Choose a continent:</label>
+            <select name="continent" id="continent">
+                <option value="europe">europe</option>
+                <option value="asia">asia</option>
+                <option value="northamerica">north america</option>
+                <option value="southamerica">south america</option>
+                <option value="antarctica">antarctica</option>
+                <option value="australia">australia</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section class="section2">
+        <h3>How can we help with Global Warming?</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mULqSzpk_d4?si=ZtNhFjBoR_2WTFuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+</body>
+</html>
